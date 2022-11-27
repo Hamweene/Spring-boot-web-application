@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    
+}
+.wrapper{
+    background:url("S:/Mulungushi/BScCs/4th year/Semester1/ICT461/labs/Course Work/images/mainFarm.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background:linear-gradient(to top, #0100057a, #000000), rgba(0, 0, 0, 0.4);
+  
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}a
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+
+
+
+
+.logo{
+    width: 70px;
+    height:auto;
+    padding: 10px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin:0 8px;
+    display:inline-block;
+    line-height: 80px;
+    
+}
+
+.navbar  ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 13px ;
+    transition: .4s;
+
+}
+
+.navbar ul li a:hover{
+    background-color: rgba(209, 61, 16, 0.349);
+    border-radius: 2px;
+
+}
+
+.wrapper .center{
+    position: center;
+    padding-top: 15%;
+    padding-left: 20%;
+    top: 100%;
+    left:70%;
+    transform: translate(-70% -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    color: rgb(230, 221, 196);
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    text-align: center;
+}
+
+.center .buttons{
+    margin: 35px 370px;
+    position: relative;
+}
+
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ffffff;
+    background: rgb(243, 135, 35);
+    border: 1px solid #f5f3eb;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.buttons button:hover{
+   background-color: #250202;
+}
+
+.footer{
+    height: 50%;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding-right: 5px;
+    padding: 3%;
+    margin-top: 0%;
+    text-align: center;
+
+}
+
+/* styling for Stake holder page*/
+
+.carousel-wrapper {
+    padding-top: 0%;
+    height: 90%;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  
+  .carousel-item {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    
+    z-index: 2;
+    opacity: 1;
+    background: url('S:/Mulungushi/BScCs/4th year/Semester1/ICT461/labs/Course Work/images/View_Reports_slider.jpg');
+    opacity: 0.9;
+    
+  }
+  .item-2 {
+    background:url('S:/Mulungushi/BScCs/4th year/Semester1/ICT461/labs/Course Work/images/CarouselTomato.jpg' );
+  
+  }
+  .item-3 {
+    background: url('S:/Mulungushi/BScCs/4th year/Semester1/ICT461/labs/Course Work/images/CarouselViewAll.jpg');
+
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  .center .Carousel_buttons{
+    margin: 35px 370px;
+    position: relative;
+}
+.carousel_buttons button{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ffffff;
+    background: rgb(243, 135, 35);
+    border: 1px solid #f5f3eb;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .5s;
+    margin-top: 220px;
+    margin-left: 520px;
+  }
+
+  /*style for data collector page*/
+
+ 
+  
+  .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 20px;
+   
+  }
+  
+  .container {
+    position: relative;
+    width: 800px;
+    margin: 30px auto 0;
+    height: 320px;
+    background-color: #999ede;
+    top: 50%;
+    margin-top: -226px
+   
+  }
+  .container .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .container .box:before, .container .box:after {
+    content: " ";
+    position: absolute;
+    left: 152px;
+    top: 50px;
+    background-color: #9297e0;
+    transform: rotateX(52deg) rotateY(15deg) rotateZ(-38deg);
+    width: 50px;
+    height: 285px;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .box:after {
+    background-color: #a5aae4;
+    top: -10px;
+    left: 80px;
+    width: 500px;
+    height: 180px;
+  }
+  .container .container-forms {
+    position: relative;
+  }
+  .container .btn {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #9297e0;
+    opacity: 1;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .btn:hover {
+    opacity: 0.7;
+  }
+  .container .btn, .container input {
+    padding: 10px 15px;
+  }
+  .container input {
+    margin: 0 auto 15px;
+    display: block;
+    width: 90%;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  
+  }
+  .container .container-forms .container-info {
+    text-align: left;
+    font-size: 0;
+    display: flex;
+  }
+  .container .container-forms .container-info .info-item {
+    text-align: center;
+    font-size: 12x;
+    width: 300px;
+    height: 320px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    opacity: 1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .container .container-forms .container-info .info-item p {
+    font-size: 20px;
+    margin-left: 100px;
+    padding-right: 20px;
+  }
+  .container .container-forms .container-info .info-item .btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  .container .container-forms .container-info .info-item .table-cell {
+    padding-right: 35px;
+  }
+  .container .container-forms .container-info .info-item:nth-child(2) .table-cell {
+    padding-left: 35px;
+    padding-right: 0;
+  }
+  .container .container-form {
+    overflow: hidden;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .container-form:before {
+    content: "✔";
+    position: absolute;
+    left: 160px;
+    top: -50px;
+    color: #5356ad;
+    font-size: 130px;
+    opacity: 0;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .container-form .btn {
+    position: relative;
+    border: none
+  }
+  .container .form-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .form-item.sign-up {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+  }
+  .container.log-in .box:before {
+    position: absolute;
+    left: 180px;
+    top: 62px;
+    height: 265px;
+  }
+  .container.log-in .box:after {
+    top: 22px;
+    left: 192px;
+    width: 324px;
+    height: 220px;
+  }
+  .container.log-in .container-form {
+    left: 265px;
+  }
+  .container.log-in .container-form .form-item.sign-up {
+    left: 0;
+    opacity: 1;
+  }
+  .container.log-in .container-form .form-item.log-in {
+    left: -100%;
+    opacity: 0;
+  }
+  .container.active {
+    width: 260px;
+    height: 140px;
+    margin-top: -70px;
+  }
+  .container.active .container-form {
+    left: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  .container.active .container-form:before {
+    content: "✔";
+    position: absolute;
+    left: 51px;
+    top: 5px;
+    color: #5356ad;
+    font-size: 130px;
+    opacity: 1;
+  }
+  .container.active input, .container.active .btn, .container.active .info-item {
+    display: none;
+    opacity: 0;
+    padding: 0px;
+    margin: 0 auto;
+    height: 0;
+  }
+  .container.active .form-item {
+    height: 100%;
+  }
+  .container.active .container-forms .container-info .info-item {
+    height: 0%;
+    opacity: 0;
+  }
+  
+  
+  /*DClogin style page*/
+
+.heading {
+	text-align: center;
+	padding-top: 40px;
+}
+.heading h1 {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-bottom: 90px;
+}
+
+form {
+	text-align: center;
+}
+form input,button{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+	font-size: 15px;
+	color: rgb(24, 23, 23);
+    border-radius: 10px;
+}
+form input{
+    padding-left: 40px;
+}
+form i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 17px;
+	top: 2px;
+}
+form span {
+	position: relative;
+}
+form ::placeholder {
+    color: rgb(119, 119, 165);
+    font-weight: bold;
+  }
+form button {
+	padding-left: 0;
+	background-color: #337af4;
+	letter-spacing: 1px;
+	font-weight: bold;
+    border-radius: 15px;
+}
+form button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #b511f6;
+    color:white;
+}
