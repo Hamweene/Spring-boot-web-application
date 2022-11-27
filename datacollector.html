@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coursework</title>
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo"src="images/farmlogo1.png" alt="logo">
+            <ul>
+              <li><a class="active" href="FMlogin.html">FarmManager</a></li>
+              <li><a href="SHlogin.html">StakeHolder</a></li>
+              <li><a href="DClogin.html"> Datacollector</a></li>
+                
+            </ul>
+        </nav>
+            <h1>
+                LAKEVIEW FARMS
+            </h1>
+        </nav>
+       
+        <div class="container">
+            <div class="box"></div>
+            <div class="container-forms">
+              <div class="container-info">
+                <div class="info-item" >
+                  </div>
+                <div class="info-item">
+                  <div class="table">
+                    <div class="table-cell">
+                      <p style="color:black ; font-weight: bolder;">
+                       DATA COLLECTOR 
+                      </p>
+                     <p>
+                        "For all your agricultural tracking needs"
+                     </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-form">
+                <div class="form-item log-in">
+                  <div class="table">
+                    <div class="table-cell">
+                      <div style="overflow-y:scroll;height:300px;">
+                        <label for="date">Date</label>
+                        <input type="date" date="date" id="date" required>
+                        <label for="time">Time</label>
+                        <input type="time" time="time" id="time" required>
+                        <label for="device">Device used</label>
+                        <input type="device" device="device" id="device" required>
+                        <label for="temprature">Temprature</label>
+                        <input type="number" temprature="temprature" id="temprature" required>
+                        <label for="humidity">Humidity</label>
+                        <input type="number" humidity="humidity" id="humidity" required>
+                        <label for="other_requirements">Other Requirements</label>
+                        <input  type="text" other_requirements="other_requirements" id="other_requirements" >
+                        <label for="section">section</label><br>
+                        <select id="cars" name="cars">
+                         <option value="Tomato">Banana</option>
+                         <option value="Banana">Tomato</option>
+                       </select><br>
+                        <label for="upload_images">Upload Images</label> <br>
+                       <input type="file" accept="image/*" alt="Upload Image" upload_images="upload_images" style="font-size: 18px;">
+                   
+                    
+                       <button type="submit" class="btn">Submit</button>
+                        <button type="reset" class="btn">Reset</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-item sign-up">
+                  <div class="table">
+                    <div class="table-cell">
+                      <input name="email" placeholder="Email" type="text" /><input name="fullName" placeholder="Full Name" type="text" /><input name="Username" placeholder="Username" type="text" /><input name="Password" placeholder="Password" type="Password" />
+                      <div class="btn">
+                        Sign up
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+  <!--
+
+      
+        <form action="admin.html" method="get">
+            <div>
+            <label for="date">Date</label>
+            <input type="date" date="date" id="date" required>
+        </div>
+        <div>
+            <label for="progress">Progress</label>
+            <input type="text" progress="progress" id="progress" required>
+        </div>
+        <div>
+            <label for="other_requirements">Other Requirements</label>
+            <input  type="text" other_requirements="other_requirements" id="other_requirements">
+        </div>
+        <div>
+            <label for="upload_images">Upload Images</label> <br>
+            <input type="file" accept="image/*" alt="Upload Image" upload_images="upload_images" id="upload_images" > 
+        </div>
+        <div>
+            <button type="submit" >Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+
+
+            <img class="logo"src="images/lg.png" alt="logo">
+        </form>
+          -->
+        </div>
+        
+        <footer class="footer">
+            <p> Mulungushi&copy;2022</p>
+    
+        </footer>
+    </div>
+   
+</body>
+</html>
